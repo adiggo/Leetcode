@@ -1,6 +1,8 @@
 public class Solution {
     private Queue<Integer> queue = new LinkedList<Integer>();
     public void solve(char[][] board) {
+       // the '0' is surrounded if it cannot go to the boudary.
+       // set four boundary
         if (board.length == 0) {
             return;
         }
