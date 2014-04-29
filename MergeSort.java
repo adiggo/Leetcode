@@ -19,7 +19,7 @@ public class MergerSort{
 		
 		int helperLeft = start;
 		int helperRight = middle+1;
-		int current = low;
+		int current = start;
 
 		while(helperLeft<=middle && helperRight <= end){
 			if (helper[helperLeft]<= helper[helperRight]){
