@@ -4,7 +4,7 @@ public class ScrambleString{
             return false;
         }
         if (s1.length()==1 && s2.length() == 1)
-            return s1.charAt(0) === s2.charAt(0);
+            return s1.charAt(0) == s2.charAt(0);
 
         char[] s1array = s1.toCharArray();
         char[] s2array = s2.toCharArray();
