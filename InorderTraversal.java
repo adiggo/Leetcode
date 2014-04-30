@@ -7,16 +7,25 @@ public  ArrayList<Integer> inorderTraversal(TreeNode root) {
             
             Stack<TreeNode> s = new Stack<TreeNode>();
             TreeNode cur = root;
-            while(!s.isEmpty()||cur!=null){
-                if(cur!=null){
-                    s.push(cur); 
-                    cur=cur.left;
+            //if root != null, keep push left into stack
+            //if s is not empty, add value in the result
+            //root = cur.right;
+            while(true){
+                if (root != null){
+                    s.push(root);
+                    root = root.left;
                 }else{
-                    cur=s.pop();
-                    res.add(cur.val);
-                    cur=cur.right;
+                    if (!s.isEmpty())
+                    Node cur = s.peek();
+                     res.add(s.pop());
+                     s.push(cur.value);
+                     root = cur.right;
+                } else{
+                    break;
                 }
             }
-            return res;
-        }
 }
+
+
+                     
+
