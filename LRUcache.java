@@ -1,3 +1,8 @@
+// The basic idea is use several method: get---> each time update the get Node as the head;
+// RemoveNode remove one node, be careful of the edge case
+// SetHead----> set the node as head, which is needed when we want to insert a new node
+// In set---> we need to consider the capacity, so in the class, there need to two field, one is head, one is end; updated in the above method
+// Doubly linked list---> good data structure to solve this problem. Since it makes us can access it's parent node easier.
 public class LRUCache {
 	private HashMap<Integer, DoubleLinkedListNode> map 
 		= new HashMap<Integer, DoubleLinkedListNode>();
