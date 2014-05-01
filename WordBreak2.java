@@ -1,4 +1,4 @@
-public class Solution {
+public class WordBreak2 {
     public ArrayList<String> wordBreak(String s, Set<String> dict) {
         ArrayList<String> ret = new ArrayList<String>();
         if (s==null || s.length()==0) return ret;
@@ -24,19 +24,24 @@ public class Solution {
 
     public void dfs(String s, int start, StringBuilder cur, ArrayList<String> ret, Set<String> dict)  {
         int n = s.length();
-        if (start >= n) {
+        if (start == n) {
+            // remember to new a cur
+            // if not, then next time, you change the cur, the content in the array will be changed.
             ret.add(new String(cur));
             return;
         }
-        for (int i=start+1; i<=n; i++) {
-            String sub = s.substring(start, i);
-            if (dict.contains(sub)) {
-                int oldLen = cur.length();
-                if (oldLen!=0) cur.append(" ");
-                cur.append(sub);
+
+        for(int i = start+1; i <= n+1; i++){
+            if (dict.contains(s.substring(start, i))){
+                int oldLength = cur.length();
+                //add " ", then string
+                if (oldLength != 0)
+                    cur.append(" ");   
+                
+                cur.append(s.substring(start, i));
                 dfs(s, i, cur, ret, dict);
-                cur.delete(oldLen, cur.length());
-            }
-        }
+                cur.delete(oldLength, cur.length());
+
+
     }
 }
