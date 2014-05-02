@@ -11,11 +11,11 @@ public class Solution {
             
             sum += diff[i];
             leftGas+= diff[i];
+            // when sum < 0, in this situation, reset sum as zero, and upgrade the startnode to startnode+1 ;
             if (sum<0){
                 startNode = i+1;
                 sum = 0;
             }
-
         }
         //we have assumed it is unique
         if (leftGas<0)

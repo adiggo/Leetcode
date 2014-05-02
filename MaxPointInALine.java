@@ -29,7 +29,7 @@ public class Solution {
                     dup++;
                     continue;}
                // get the key from max or slope
-                double key = points[i].x == points[j].x ? Integer.MAX_VALUE : 0.0+(double) (double)(points[j].y-points[i].y)/(double)(points[j].x-points[i].x);
+                double key = points[i].x == points[j].x ? Integer.MAX_VALUE : 0.0+(double)(points[j].y-points[i].y)/(double)(points[j].x-points[i].x);
                 if (map.containsKey(key))
                     map.put(key, map.get(key)+1);
                 else
