@@ -1,5 +1,6 @@
 public ArrayList<ArrayList<String>> partition(String s) {
-	ArrayList<ArrayList<String>> result = new ArrayList<ArrayList<String>>();
+// since we need to list all the arraylist, so we need to use dfs to list out all the combination
+    ArrayList<ArrayList<String>> result = new ArrayList<ArrayList<String>>();
  
 	if (s == null || s.length() == 0) {
 		return result;
@@ -14,6 +15,7 @@ public ArrayList<ArrayList<String>> partition(String s) {
 private void addPalindrome(String s, int start, ArrayList<String> partition,
 		ArrayList<ArrayList<String>> result) {
 	//stop condition
+    //also remember to new a partition to insert into result
 	if (start == s.length()) {
 		ArrayList<String> temp = new ArrayList<String>(partition);
 		result.add(temp);
