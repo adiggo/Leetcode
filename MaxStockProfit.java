@@ -12,7 +12,7 @@ int maxProfit(int[] prices){
 		if (prices[i] < min)
 			min = prices[i];  //update min each time
 		if (diff< prices[i]-min)
-			diff = pirces[i]-min
+			diff = pirces[i]-min;
 	}
 	return diff;
 }
