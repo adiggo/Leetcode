@@ -10,6 +10,7 @@ public class Solution {
         // iterate from last second row
         for (int i = triangle.size() - 2; i >= 0; i--) {
             for (int j = 0; j < triangle.get(i + 1).size() - 1; j++) {
+                // From bottom to up
                 total[j] = triangle.get(i).get(j) + Math.min(total[j], total[j + 1]);
             }
         }
