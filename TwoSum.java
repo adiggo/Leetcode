@@ -11,7 +11,7 @@ public int twoSum(int[] a){
             result[1] = i;
             break;
         }else{
-            map.put(target-a[i], i);
+            map.put(target-a[i], i);// i is the index
         }
     }
     return result;
