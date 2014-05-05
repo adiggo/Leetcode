@@ -7,6 +7,7 @@ public class Solution {
         if(rowIndex==0) return getList(res);
         for(int j=1;j<rowIndex+1;j++){
             for(int i=j-1;i>0;i--){
+                // written previous res[]
                 res[i]=res[i]+res[i-1];
             }
             res[j]=1;
