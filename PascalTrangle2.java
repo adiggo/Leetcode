@@ -1,3 +1,14 @@
+/**
+ *
+ * PascalTriangle 2 requires us to get the specific row, since we
+ * can get the result of PascalTriangle by get the ArrayList,
+ * however, it is not a good method for this problem since it takes too
+ * much space. So in this problem we need to use a array which can holds more elements,
+ * and update each time. Initial set result[0]=1, than update it each time with the for
+ * loop.
+ */
+
+
 public class Solution {
     public ArrayList<Integer> getRow(int rowIndex) {
         // Start typing your Java solution below
