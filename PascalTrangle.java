@@ -1,3 +1,13 @@
+/**
+ *
+ *
+ * PascalTriangle provides the method to get the PascalTriangle output arraylist with a input number of rows
+ * The basic idea is simple: use iteration to add arraylist into result;
+ * For each iteration, it needs to new a ArrayList, and insert 1 into it.If the length
+ * is larger than 1, then it also need to insert 1 to the tail of the ArrayList,the middle
+ * elements should be inserted with n-1 row element l + element l+1; 
+ */
+
 public class PascalTriangle{
     public ArrayList<ArrayList<integer>> generate(int numRows){    
         public ArrayList<ArrayList<Integer>> re = new ArrayList<ArrayList<Integer>>();
