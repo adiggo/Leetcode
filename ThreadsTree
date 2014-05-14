@@ -1,0 +1,13 @@
+Basic traversal for tree need stack and queue which are very large.
+
+It is difficult to find successor node for a given node.
+
+do not need both stacks and queues and such traversal algorithm called Threaded Binaray Tree Traversals
+
+consider node k has right child r. then its left pointer of r must be either has a child or has a Thread back to k.
+
+if left subtree is empty, left link points to the in-order predecessor. 
+if right subtree is empty, right link points to the in-order successor.
+
+
+

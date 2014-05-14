@@ -1,4 +1,9 @@
 import java.util.*;
+/**
+ *apply greedy method to solve this problem
+ *
+ *@author Xiaoping Li
+ */
 public class LargestRectangleInHistogram{
     public int maximumArea(int[] height){
         if (height == null || height.length() ==0){
@@ -9,6 +14,9 @@ public class LargestRectangleInHistogram{
         }
         
         int maxArea = 0;
+        //greedy means sub-optimal 
+        //which guarantee the whole
+        //optimal
         for (int i = 0; i < height.length; i++){
             int minV = height[i];
             for (int j = i; j>= 0; j--){
