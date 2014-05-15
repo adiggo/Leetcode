@@ -6,6 +6,9 @@
  *     TreeNode right;
  *     TreeNode(int x) { val = x; }
  * }
+ *
+ * if two tree is equal, then the root should be equal, and its lefttree and righttree should be equal.
+ *
  */
 public class Solution {
     public boolean isSameTree(TreeNode root1, TreeNode root2) {
