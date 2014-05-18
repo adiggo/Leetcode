@@ -1,0 +1,27 @@
+Dynamic programming is to split problems into subproblem. And get the sub-solution. 
+We need to find out smaller state than state i would be solution for any sum j where
+j < i. Find a state i, we need to first find a state j.
+
+
+For example: coin problem--> which is the minimum combination of coins to get sum s?
+For this problem ------> minimum element for sum0,then minimum element for sum1, sum2,
+sum3---> sum s.  Analyze this problem, first find out all coins smaller or equal to s.
+
+Remember state -----> important point for dp
+
+code for DP:
+
+set min[i] equal to max_Integer for all i
+min[0] = 0
+for (i = 1 to s)
+    for (j = 0 to N-1)
+
+        // if  valueJ is less or equal to zero then we can use i-valueJ +1 to update the minimum amount of coins
+
+        if (value of j <= i And min[i- value of j] + 1 < min[i])
+            then min[i] = min[i-v]+1
+
+
+min[s] is the result;    ------> keep state information
+
+
