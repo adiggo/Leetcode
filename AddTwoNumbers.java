@@ -1,3 +1,12 @@
+/**
+ *
+ *  easy problem, the only consideration is to use a carry
+ *  store the information.
+ *
+ *
+ *
+ */
+
 public class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
        int carry =0;
