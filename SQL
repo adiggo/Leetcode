@@ -1,0 +1,18 @@
+SQL is based on set and relational operation.
+
+allows duplicates in relations as well as in query results. 
+to avoid duplicates, insert keyword----> distinct
+
+to keep duplicates, --> all
+
+rename---> ** as **     -----> different representation for output
+and also can simplify
+
+String operation----> %-> match any substring    _ --> match any char
+
+union ,,, intersect
+
+avg, min, max, sum, count
+
+procedure ---> a group of PL/SQL statements that we call by name. 
+
