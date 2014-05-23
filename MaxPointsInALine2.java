@@ -1,4 +1,14 @@
 /**
+ *
+ *  1. be careful of x1 = x2; 
+ *  2. be careful of two duplicate points
+ *  3. be careful of 0.0 != -0.0
+ *
+ *
+ */
+
+
+/**
  * Definition for a point.
  * class Point {
  *     int x;
