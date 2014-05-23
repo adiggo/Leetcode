@@ -35,7 +35,7 @@ public class Solution {
                 else
                     map.put(key, 2);
             }
-         
+            // dup is important in this problem, since for dup point, they can count as any slope's point.         
             for (Integer k : map.values()){
                 if (k + dup > max)
                     max = k + dup;
