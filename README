@@ -1,0 +1,18 @@
+Need to rewrite:
+
+1. Word Ladder
+2. Word Ladder2
+3. Longest Palindrome
+4. LRU cache
+5. Binary Tree Inorder
+6. Word Break
+7. Word Break2
+8. Copy List With Random Pointer 
+9. Single number2 ----> from binary to ternary (bit manupulation)
+10. Candy ----> Scan twice   (Trapping rain water ---> scan twice)
+11. Clone Graph
+12. Binary maximum Path sum--->(recursion or backtrace) max(left + right + root, max)
+13. Best time to sell stock 3
+14. Triangle (DP)
+15. Pascal Triangle (iteration)
+
