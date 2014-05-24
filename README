@@ -16,3 +16,18 @@ Need to rewrite:
 14. Triangle (DP)
 15. Pascal Triangle (iteration)
 
+
+Heap vs Stack -----> heap memory allocation is dynamic. Stack memory allocation is fixed. 
+                     If there are not enough memory, stack overflow will happen.
+Problem with heap--> fragmentation---> on system with virtual memory, fragmentation is less of a problem that we can think of. 
+Since though physical memory is in fragmentation state, but in virtual memory it still works..
+
+The access speed for stack should be faster. 
+In a multi-threaded app, each thread will have its own stack, but share same heap. 
+In c++, object can be stored in stack. If create an object inside a function without using "new". -----> create object on the stack, not on heap.
+In c++, any data on the stack created specifically for that function call will automatically be deleted. Data on heap will remain until it's manually
+deleted.
+
+Similar--> They are both stored in computer's RAM
+
+
