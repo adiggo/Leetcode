@@ -11,7 +11,7 @@ Need to rewrite:
 9. Single number2 ----> from binary to ternary (bit manupulation)
 10. Candy ----> Scan twice   (Trapping rain water ---> scan twice)
 11. Clone Graph
-12. Binary maximum Path sum--->(recursion or backtrace) max(left + right + root, max)
+12. Binary maximum Path sum--->(recursion) max(left + right + root, math.max(left, right)+root)--> finished in May24th
 13. Best time to sell stock 3
 14. Triangle (DP)
 15. Pascal Triangle (iteration)
@@ -31,4 +31,6 @@ deleted.
 Similar--> They are both stored in computer's RAM
 
 Iterative vs Recursion----> recursion use too much memory space. Just a few language has tail-optimization which is efficient for recursion. 
+
+Master theorem provides us a way to evaluate certain recurrences. ----> solve big O notation for recursion.
 
