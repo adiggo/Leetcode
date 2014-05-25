@@ -1,3 +1,13 @@
+/**
+ *
+ *  Use BFS to solve this problem.
+ *  wordQueue and distanceQueue stores both information.
+ *  Treat each word as a node in a graph
+ *  
+ *
+ *
+ */
+
 public class Solution {
     public int ladderLength(String start, String end, HashSet<String> dict) {
  
@@ -18,7 +28,7 @@ public class Solution {
             if(currWord.equals(end)){
                 return currDistance;
             }
- 
+            // transform between "a" to "z" 
             for(int i=0; i<currWord.length(); i++){
                 char[] currCharArr = currWord.toCharArray();
                 for(char c='a'; c<='z'; c++){
@@ -28,12 +38,12 @@ public class Solution {
                     if(dict.contains(newWord)){
                         wordQueue.add(newWord);
                         distanceQueue.add(currDistance+1);
-                        dict.remove(newWord);
+                        dict.remove(newWord);// need to remove it once we have added it into queue, if not, we will get into endless loop.(circular graph)
                     }
                 }
             }
         }
- 
+        //denote other case
         return 0;
     }
 }

@@ -1,3 +1,13 @@
+/**
+ *
+ *  Solve this problem by DP;
+ *  First, we need to get its initial state;
+ *  Which should be 1 in the both left side and upper side;
+ *  and one fixed index value should be equal to its left + upper.
+ *
+ */
+
+
 public class Solution {
     public int uniquePaths(int m, int n) {
         if (m == 0 && n== 0){

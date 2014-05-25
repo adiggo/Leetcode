@@ -1,3 +1,11 @@
+/**
+ *
+ *  JumpGame define a 
+ *
+ *
+ */
+
+
 import java.util.*;
 public class JumpGame{
     // DP to solve this problem
