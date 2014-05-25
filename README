@@ -34,3 +34,8 @@ Iterative vs Recursion----> recursion use too much memory space. Just a few lang
 
 Master theorem provides us a way to evaluate certain recurrences. ----> solve big O notation for recursion.
 
+
+Unit Test:
+extending TestCase is the way unit tests were written in Junit 3
+using @test annotation is the way introduced by JUnit 4.
+
