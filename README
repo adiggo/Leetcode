@@ -50,3 +50,10 @@ protected   |  y    |    y    |    y     |   n
 no modifier |  y    |    y    |    n     |   n
 ————————————+———————+—————————+——————————+———————
 private     |  y    |    n    |    n     |   n                y denotes accessible, no denotes inaccessible.
+
+Type erasure applied to use of generics. Compiled generic code just uses java.lang.Object wherever we talk
+about T and there's some metadata to tell the compiler that it really is a generic type.
+At execution time, List<String> and List<Date> are exactly the same. Extra information has been erased by the compiler.
+
+
+
