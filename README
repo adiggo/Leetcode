@@ -39,3 +39,14 @@ Unit Test:
 extending TestCase is the way unit tests were written in Junit 3
 using @test annotation is the way introduced by JUnit 4.
 
+Compare public, protected, default, private----->
+
+Modifier    | Class | Package | Subclass | World
+————————————+———————+—————————+——————————+———————
+public      |  y    |    y    |    y     |   y
+————————————+———————+—————————+——————————+———————
+protected   |  y    |    y    |    y     |   n
+————————————+———————+—————————+——————————+———————
+no modifier |  y    |    y    |    n     |   n
+————————————+———————+—————————+——————————+———————
+private     |  y    |    n    |    n     |   n                y denotes accessible, no denotes inaccessible.
