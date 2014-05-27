@@ -55,5 +55,4 @@ Type erasure applied to use of generics. Compiled generic code just uses java.la
 about T and there's some metadata to tell the compiler that it really is a generic type.
 At execution time, List<String> and List<Date> are exactly the same. Extra information has been erased by the compiler.
 
-
-
+When using genrics to build our class, when we use constructor, we don't put generics 
