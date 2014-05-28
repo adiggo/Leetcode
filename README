@@ -68,8 +68,7 @@ public static synchronized YourObject getInstance() {
 }
 
 
-Heap sort:
-
+Heap sort in java:
 PriorityQueue<String> p  = new PriorityQueue<String>(10, new Comparator<String>(){
                            public int compare(Sring x, String y){
                             if (x.length < y.length())
@@ -85,3 +84,14 @@ MinHeap: each node is greater or equal than its parent.
 In C++, unsigned numbers can't overflow. When unsigned int is 32 bit, result = (a*b) mod 2^32
 However, for signed integer, overflow cause undefined behavior.
 In java, if it is overflow, it goes back to underflow condition.
+
+Hashtable is a data structure that maps keys to values for highly efficient lookup. 
+--> Hashtable has an underlying arrray and a hash function. When we insert a key and value, 
+the hash function maps the key to an integer, indicate the index in the array. Object is then 
+stored at that index;
+hashvalue of all keys should be unique. To avoid hash collision, we need to consider insert a
+linkedlist in each index. 
+
+virtual in c++: it defines a class in super class, and this helps its subclass to override it.
+
+Dependency injection: better for test. Pass the object directly into constructor.
