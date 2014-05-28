@@ -79,3 +79,5 @@ PriorityQueue<String> p  = new PriorityQueue<String>(10, new Comparator<String>(
                             **
                             }}
                             );
+
+MinHeap: each node is greater or equal than its parent.
