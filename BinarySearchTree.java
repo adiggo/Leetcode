@@ -80,8 +80,8 @@ public class BSTNode{
                     return false;
             }else{
                 if (left != null && right != null){
-                    this.value = right.minValue();
-                    right.remove(this.value, this);
+                    this.value = right.minValue();// set the node of value to right side's minimum value;
+                    right.remove(this.value, this); // removw this value
                 }else if (parent.left == this){
                     parent.left = (left != null) ? left : right;
                 }else if (parent.right == this){
