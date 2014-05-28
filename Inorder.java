@@ -28,7 +28,7 @@ Class Solution{
     void in_norecur(TreeNode root, ArrayList<Integer> res){
         Stack<TreeNode> stack = new Stack<TreeNode>();
         while(true){
-            if (root){
+            if (root != null){
                 stack.push(root);
                 root = root.left;
             }else{
