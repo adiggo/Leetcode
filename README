@@ -66,3 +66,16 @@ public static synchronized YourObject getInstance() {
                         }
                             return instance;
 }
+
+
+Heap sort:
+
+PriorityQueue<String> p  = new PriorityQueue<String>(10, new Comparator<String>(){
+                           public int compare(Sring x, String y){
+                            if (x.length < y.length())
+                            {
+                                return -1 ;
+                            }
+                            **
+                            }}
+                            );
