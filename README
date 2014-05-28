@@ -81,3 +81,7 @@ PriorityQueue<String> p  = new PriorityQueue<String>(10, new Comparator<String>(
                             );
 
 MinHeap: each node is greater or equal than its parent.
+
+In C++, unsigned numbers can't overflow. When unsigned int is 32 bit, result = (a*b) mod 2^32
+However, for signed integer, overflow cause undefined behavior.
+In java, if it is overflow, it goes back to underflow condition.
