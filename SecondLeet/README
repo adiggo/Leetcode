@@ -1,3 +1,11 @@
 1. Single Number--> bit manipulation ^
 2. Maximum depeth of a binary tree--> use recursion or BFS (solved by iteration)
-3. Same Tree ---> use recursion to check or use BFS ---> use recursion, we need to get 
+3. Same Tree ---> use recursion to check or use BFS ---> use recursion, we need to get its return condition (null)
+4. Reverse Integer ---> consider overflow---> 1. identify positive or negative 2. consider overflow  mod=p%10; p=p/10; res = res*10+mod;
+5. Best time to sell stock2 ---> if prices[i]>prices[i-1], sum+; --> guaranteed since the we need to get maximum profit;
+6. Unique Binary Search trees --->  DP--> count[n] record how many number of bst--> for 1,2,3-> if 1 as root, consider how many bst can form using two element;
+7. Binary Tree Preorder ---> stack
+8. Linked List Cycle ---> two pointer
+9. Binaray Tree Inorder Traversal --> stack--> go to left until null, then(condition is stack is not empty) pop out, go right
+10.Populating next right pointer ---> iteration--> find each level's most left--> then go right 
+11. Search insertion postion--> Binary search -> just one condition: if (mid > low && A[mid] > target && A[mid-1] < target) return mid;
