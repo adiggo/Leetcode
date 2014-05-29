@@ -155,5 +155,7 @@ a view's purpose is to display information in human readable format. View templa
 To create a new controller, we need to run the "controller" generator--> rails generate controller welcome index --> index is the action
 
 
+Angular JS: 1. MVC --> split app into mvc component;    2. unit test ready  3. a declarative user interface 4. data are POJO
+            4. 
 
 
