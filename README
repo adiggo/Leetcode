@@ -3,7 +3,7 @@ Need to rewrite:
 1. Word Ladder---> finished in May 23. BFS
 2. Word Ladder2
 3. Longest Palindrome
-4. LRU cache
+4. LRU cache  ---> implement with doubly linked list
 5. Binary Tree Inorder
 6. Word Break
 7. Word Break2
@@ -95,3 +95,65 @@ linkedlist in each index.
 virtual in c++: it defines a class in super class, and this helps its subclass to override it.
 
 Dependency injection: better for test. Pass the object directly into constructor.
+
+Graph---> a bunch of verticles connected by edges;
+Graph can be represented by pair (V,E)
+Degree---> for undirected graph--> Degree of a vertex is the number of edges touching it.
+           for directed graoh--> in-Degree is the number of edges entering the vertex, out-degree is number of e out.
+we can write u => v if there is a path from u to v;   v is reachable from u.
+a cycle is a path of length at least 1 from a vertex to itself;
+graph with no cycles is acyclic;
+path with no cycle is a simple path;
+
+For undirected graph is connected iff there is a path between any two verticles;
+a free tree is a connected, acyclic, undirected graph --> E = V-1, any two verticles are connected by exactly one path.
+If the graph is disconnected, it's a forest;
+addding an edge result in a cycle in free tree;
+
+DFS:
+DFS(G)
+for each vertex u in V[G]
+    do color[u] is WHITE
+        u.parent = NIL
+for each vertex u in V[G]
+    do if u.color = WHITE
+        then DFS-VISIT(u)
+DFS-VISIT(u)
+    u.color = gray;
+    for each v in u.adj 
+        do if v.color == WHITE
+            then v.parent = u
+                DFS-VISIT(v)
+    u.color = BLACK
+
+On an undirected graph, any edge that is not a "tree" edge is a "back" edge (from descendant to ancestor)
+For directed graphs: if we visit the vertex while it is still GRAY, we have a back edge.
+
+Topological sort---> related to finishing time.
+
+Running time of DFS is O(V+E).---> for Graph
+Cycle detection in graph: if the graph is undirected, then dfs returns to a vertex it has visited, there is a cycle;
+                          However, for directed graph, it is not right ---> a graph G contains cycle if and only if a DFS of G yields a back edge.---> back edge
+                          How to detect back-edge in DFS ---->
+
+
+MVC---> model view and controller ----> controller will handle IO between "views", model is the application logic and state, view is representation of state in model.
+
+gem--> a piece of ruby code packaged as a library so that it can be imported and used by other program.
+popular gem--> rails, activerecord, rake. Rubygems is the name of the project that wrote the "gem" ruby library.
+Symbol vs String --> :"**" vs "**"--> string is mutable and memory for string is released every time, for symbol memory is not released each time.Use the same heap location.
+Instance variable ---> @     Global variable ---> $  
+Constructor in Ruby---> initialize
+Overloading in Ruby is not supported. it does support the overall goal of passing variable number of parameters to the same method.
+
+
+
+Rails--> web application framework in Ruby. --> teo major principles (don't repeat yourself, convention over configuration)
+rails server --> this can fire up WEBrick--> a web server distributed with Ruby by default. 
+a view's purpose is to display information in human readable format. View templates are written in eRuby--> embedded Ruby. 
+
+To create a new controller, we need to run the "controller" generator--> rails generate controller welcome index --> index is the action
+
+
+
+
