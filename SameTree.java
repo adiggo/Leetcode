@@ -12,6 +12,7 @@
  */
 public class Solution {
     public boolean isSameTree(TreeNode root1, TreeNode root2) {
+       //edge case
         if (root1 == null && root2 == null){
             return true;
         }else if (p != null && q!= null){
