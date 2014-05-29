@@ -1,3 +1,3 @@
 1. Single Number--> bit manipulation ^
 2. Maximum depeth of a binary tree--> use recursion or BFS (solved by iteration)
-3. Same Tree ---> use recursion to check or use BFS ---> use recursion, we need to get 
+3. Same Tree ---> use recursion to check or use BFS ---> use recursion, we need to get its return condition.  
