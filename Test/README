@@ -1,0 +1,77 @@
+1. Benefit--> avoid defect introduced in code
+2. Risk-based testing --> create test based on prioritized by test 
+3. Equivalent partition --> one valid, one smaller than lower bound, one exceed upper Boundary 
+   Boundary Value analysis --> input domain data divided into different equivalence data classes. --> reduce test cases.
+   input values at the extreme ends of input domain cause more errors
+4. preventative tests --> early;  reactive test --> after software has produced.
+5. exit criteria --> define when a test level is completed.
+6. level of risk --> "likelihood" of a adverse event and the "impact" of the event;
+7. decision table testing used for testing systems for which the specification takes the forms of rules or cause-effect combinations. 
+    in decision table, input listed in a column, with outputs list in the same column but below inputs. 
+8. review software deliverable --> identify defects in any software work product.
+9. test case specification defines the expected results of a test 
+10.test independence --> avoid author bias in defining effective tests
+
+11.Determin exit creteria --> test planning
+12.beta testing --> testing performed by potential customers at their location.
+13.Decision coverage--> covers both true and false condition.
+14.Rapid application development --> parallel development.
+15.Testing tech vs testing tools --> first is a process, second is the resource to test;
+16.regression testing --> repeated testing of an already tested program. Ater modification, discover any defects introduced.
+17. Component testing --> unit testing 
+18. Functional System testing --> test end to ends
+19. Reactive testing--> when software or system has been produced, then reactive approach to testing
+20. Test analysis and design include testability of the requirements and system.
+
+21. why use risk driven test---> testing everything is not feasible.
+22. Random testing ---> monkey testing. Test data is generated automatically. --> used by beginner.
+23. incident report --> feedback about problem; provide ideas for test process improvement; 
+24. Data flow analysis and inspection are static. all other are dynamic.
+25. dynamic and static technique --> complementary--> find different type of defects.
+26. formal review --> 1, plan 2, kick-off 3, preparation 4, review meeting 5. rework 6. follow-up
+27. Role of moderator --> leads review process
+28. configuration management procedure --> during testing planning.
+29. Security testing --> is a type of functional testing 
+30. Load testing --> test under different workloads.
+
+31. Integration level testing ---> testing performed expose defects in the interface and in the interaction
+32. structure-based testing --> white box 
+33. regrassion testing --> happen when software change
+34. negative test -->put invalid input and receive error. 
+    positive test --> put valid input, and wait for some action.
+35. test completion criterion --> determine when to stop
+36. memory leaks--> static test cannot find
+37. Re-testing ---> ensure originial fault has been removed. Regression--> looks for unexpected side effect.
+38. Experience-based --> people's skills and knowledeg prime
+39. Inspection --> a type of review require formal entry and exit criteria.
+40. Output comparator --> regrassion test
+
+Ç
+41. Driver --> calls function to be tested and passes it test data.
+42. Lack of objective --> developer have difficulty testing work
+43. Depend on the risk of industry --> how much test needs
+44. semi-random test case --> perform random test cases and do equivalence partitioning to test cases
+45. technical review --> used to evaluate a product
+46. Faults found --> originial document by tester
+47. no world-wide recognized documentation standard.
+48. regression testing should do on other modules since change one module may affect others.
+49. erros frequently happen during boundary 
+50. V-model --> how tesing activity integrate with software developemnt phases
+
+51. Maitenance testing --> triggered by modification
+52. Test coverage --> measure in some specific way 
+53. incremental integration preferred over "big bang" Integration
+54. Before test design--> prepare RTM 
+55. staring form the termial modules --> bottom-up Integration
+56. During test planning --> faults found most effectively
+57. requirement phase --> understand user needs
+58. regression tool benefit most from the use of test tools
+59. The use of data on paths through codes --> study data flow 
+60. alpha testing --> pre-release testing by end user at developer site.
+
+61. failure --> departure from a specified behavior
+62. Test comparator --> automate aspects of that comparison.
+63. Scribe --> documentation
+64. Big-bang testing --> hardware, software testing 
+65. falut masking --> error condition hide another error condition.
+66. Traceability matric--> relationship 
