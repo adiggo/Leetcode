@@ -156,6 +156,9 @@ To create a new controller, we need to run the "controller" generator--> rails g
 
 
 Angular JS: 1. MVC --> split app into mvc component;    2. unit test ready  3. a declarative user interface 4. data are POJO
-            4. 
+             
 
+In java, Map is an interface, HashMap is a class. 
+HashMap is not Synchronized, hashtable is.
 
+Trie(prefix tree) is a good data structure for building a memory-efficient dictionary with fast lookups.----> it likes a hashtable,but with sorted keys

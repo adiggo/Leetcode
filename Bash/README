@@ -1,0 +1,44 @@
+1. change permission
+chmod 400 file  ---> read by owner
+chmod 040 file ---> read by group
+chmod 004 file --> read by world
+
+chmod 200 file --> write by owner
+
+chmod +rx file --> give owner read and execute permission
+
+2. Comment:
+#---> if in a quote or using escaping, it is not working as a Comment
+
+; --> command separator   --> permits puting two or more commands on the same line.
+
+;; --> case option--> case "$variable" in
+                        abs) echo "\$variable = abc" ;;
+                        xyz) echo "\variable = xyz" ;;
+                      esac
+
+. --> a single dot represent the current directory; double dot represent the parent directory;
+
+-- double dash--> used for end of command options
+for example--> grep -v file --> means that find out the lines that does not contains. to get lines contains -v: grep -- -v file
+
+` ---> command substitution--> a = `ls`;echo $a
+
+
+
+
+
+
+
+-----------------------------------
+Variable and Parameters:
+
+distinguish name and its value --> for example : a = 9;echo a;echo $a
+echo "$a", double quoting does not interfere with variable substitution
+exit 0--> denote end of sh script
+for loop in bash--->
+        for i in 7 8 9
+        do 
+            echo "$i "
+        done
+

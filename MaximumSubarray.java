@@ -7,9 +7,9 @@ public class MaximumSubarray{
 
         sum[0] = A[0];
         for (int i = 1; i < A.length; i++){
-            sum[i] = Math.max(A[i], sum[i-1]+A[i]); 
-            sum = Math.max(sum, sum[i]);
+            sum[i] = Math.max(A[i], sum[i-1]+A[i]); //here is current compare
+            max = Math.max(max, sum[i]);// here max denotes the previous max value
         }
-        return sum;
+        return max;
     }
 }
