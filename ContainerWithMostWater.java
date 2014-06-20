@@ -1,7 +1,7 @@
 /**
  *
  *
- *
+ * Scan once from start to end
  *
  *
  */
@@ -17,7 +17,7 @@ public class ContainerWithMostWater{
             if (input[high] > input[low])
                 low++;
             else
-                high++;
+                high--;
         }
         return maxValue;
     }

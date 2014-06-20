@@ -5,8 +5,8 @@
  */
 public class GrayCodeIterative{
    
-    ArrayList<Integer> grayCode(int n){
-        ArrayList<Integer> ans = new ArrayList<Integer>();
+    List<Integer> grayCode(int n){
+        List<Integer> ans = new ArrayList<Integer>();
         ans.add(0);
         int num = 1;
         for (int i = 1; i <= n; i++){

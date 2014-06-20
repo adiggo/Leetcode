@@ -15,7 +15,9 @@ Need to rewrite:
 13. Best time to sell stock 3
 14. Triangle (DP)
 15. Pascal Triangle (iteration)
-
+16. Gray Code (use iterative or recursion)
+17. Search in rotated sorted array --> use four situation to write iteration. 
+18. Search in rotated sorted array2 --> this should consider when A[m]== A[low]. in this situation, move low forward.
 
 Heap vs Stack -----> heap memory allocation is dynamic. Stack memory allocation is fixed. 
                      If there are not enough memory, stack overflow will happen.
@@ -151,8 +153,11 @@ Overloading in Ruby is not supported. it does support the overall goal of passin
 Rails--> web application framework in Ruby. --> teo major principles (don't repeat yourself, convention over configuration)
 rails server --> this can fire up WEBrick--> a web server distributed with Ruby by default. 
 a view's purpose is to display information in human readable format. View templates are written in eRuby--> embedded Ruby. 
+WEBrick is a ruby library providing HTTP web server services.
 
 To create a new controller, we need to run the "controller" generator--> rails generate controller welcome index --> index is the action
+A controller is simply a class that is defined to inherit from ApplicationController. we can define any methods that will become the action of the controller,
+the actions will perform CRUD operation.
 
 
 Angular JS: 1. MVC --> split app into mvc component;    2. unit test ready  3. a declarative user interface 4. data are POJO
@@ -160,5 +165,59 @@ Angular JS: 1. MVC --> split app into mvc component;    2. unit test ready  3. a
 
 In java, Map is an interface, HashMap is a class. 
 HashMap is not Synchronized, hashtable is.
+StringBuffer is synchronized, while stringbuilder is not.
+Class must be declared as abstract when it has one or more abstract methods. --> method is abstract when it has a method heading, but no body
+an abstract class is good if we want to declare non-public members. 
 
-Trie(prefix tree) is a good data structure for building a memory-efficient dictionary with fast lookups.----> it likes a hashtable,but with sorted keys
+
+Trie(prefix tree) is a good data structure for building a memory-efficient dictionary with fast lookups.----> it likes a hashtable,but with sorted key 
+
+Action Listener---> event handlers to implement --> define a action Listener to define what should be done when an user performs certain operation. 
+result is actionPerformed message --> sent to all action Listeners that are registered to the relevant component.
+class MyClass implements ActionListener{
+
+    someComponent.addActionListener()
+
+    void actionPerformed(ActionEvent e){
+    }
+
+
+DATABASE INDEX---> Data is stored on disk based on storage devices, it stores as blocks of data. 
+                   Index downside is it need additional space. 
+                   It can be used for sorting fields, which helps to perform a binary search ---> Log N.
+
+
+Hibernate LazyLoading -->  a parent has a collection of children. It does not load all the children when loading parents. Loads them when requested
+to do so. 
+
+REST stands for Representational State Transfer. --> stateless, client-server, 
+          rather than using SOAP, CORBA, RPC to connect between machines, simple HTTP does all the works
+
+          Restful use HTTP request to post data(create /update), read data(make queries), and delete data. 
+          1. Language independent.
+          2. standard based --> no built-in security features. 
+
+In objective c, + means class method, - is the instance method.
+xib file and storyboard ---> two way for view development.  There are some bad links in xib file if using interface builder.
+IBAction tells xcode that we want to use the method to be available as an action method in interface builder. Otherwise it is equal to void, 
+IBAction and IBOutlet are macros defined to be denote variables and methods can be referred to a interface builder. 
+IBAction resolves to void and IBOutlet resolves to nothing.  --> link UI to my codes. 
+In the implementation file, private declaration can go to the @interface section part. 
+
+@interface Card()
+@end
+
+In IOS, we don't access instance variable directly. We use an @property which declares two methods --> "setter" and "getter". 
+All objects live in the heap (pointed to) in objective c. 
+@property (strong) NSString *contents; --> strong means keep object that this property points to in memory until I set the property to nil (zero). 
+weak means "if no one has a strong pointer to this object, then we can throw it out of memory and set this property to nil".
+Method and variables declared in header file is public. 
+Calling getter by using "dot notation" --> only for setter and getter --> card.contents   --> contents here is the getter method for card.
+Square bracket --> [] --> send a message to an object. --> card.contents isEqualToString:self.contents ----> the message isEqualToString is sent to NSString.
+NSInteger is 64 bit while int is 32bit--> be careful of switching. 
+any char, number, boolean literal prefixed with @ will evaluate to a pointer to an NSNumber object initiated with that value;
+if we override the setter and getter, then we need provide --> @synthesize suit = _suit;
+- --> means instance method ;;  + ---> means class method. 
+init ---> [[PlayingCardDeck alloc] init]
+instancetype ---> tell compiler that this method returns an object which will be same type as object that this message sent to. 
+
