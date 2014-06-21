@@ -3,8 +3,9 @@
  *  Use BFS to solve this problem.
  *  wordQueue and distanceQueue stores both information.
  *  Treat each word as a node in a graph
- *  
- *
+ *  So for this problem, set up the two linkedlist is important since it perform the bfs operation.
+ *  Abstract this problem as a BFS problem is the easiest way to solve this problem .
+ *  The basic reason for using BFS is because we need to find out the shortest path. 
  *
  */
 

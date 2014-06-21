@@ -14,15 +14,17 @@ public class Solution {
         
         //新建一个hashmap，保存每个节点的所有前驱。
         HashMap<String, ArrayList<String>> map = new HashMap<String, ArrayList<String>>();
+        // initial two elements
         map.put(end, new ArrayList<String>());
         map.put(start, new ArrayList<String>());
+        // store each string in the dict with an arraylist into the map.
         for (String s : dict) {
         	map.put(s, new ArrayList<String>());
         }
         
         //利用bfs 层序遍历 如果队列中有end 那么结束遍历（到最短的一层就结束）
         Queue<String> queue = new LinkedList<String>();
-        queue.offer(start);
+        queue.offer(start);    // add method
         ArrayList<String> currentlevel = new ArrayList<String>(); 
         while (!queue.isEmpty()) {
         	int level = queue.size();

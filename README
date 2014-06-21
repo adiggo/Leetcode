@@ -18,6 +18,7 @@ Need to rewrite:
 16. Gray Code (use iterative or recursion)
 17. Search in rotated sorted array --> use four situation to write iteration. 
 18. Search in rotated sorted array2 --> this should consider when A[m]== A[low]. in this situation, move low forward.
+19. Set Zeros in Matrix ---> do it in place. reuse the memory rather than create new space. 
 
 Heap vs Stack -----> heap memory allocation is dynamic. Stack memory allocation is fixed. 
                      If there are not enough memory, stack overflow will happen.
@@ -29,6 +30,9 @@ In a multi-threaded app, each thread will have its own stack, but share same hea
 In c++, object can be stored in stack. If create an object inside a function without using "new". -----> create object on the stack, not on heap.
 In c++, any data on the stack created specifically for that function call will automatically be deleted. Data on heap will remain until it's manually
 deleted.
+List l = new LinkedList()  ----> l has the method listed in List. but it cannot use method exist in linkedlist but not in list. 
+Think about why we use List as declared type is because we want to use the same property of List.--> very important--> so if we 
+want to use method that only exist in linkedlist--> then we just need declare type as linkedlist. 
 
 Similar--> They are both stored in computer's RAM
 
