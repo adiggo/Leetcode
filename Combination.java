@@ -1,3 +1,9 @@
+// this problem best solved by recursion. 
+// for example, if solving use iterative, 
+// then we can figure out we should make a 
+// k length list which contains integers. 
+
+
 public class Combination{
 
     // use recursiont to solve this problem
