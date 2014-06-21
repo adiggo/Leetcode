@@ -39,6 +39,7 @@ public class Solution {
                     if(dict.contains(newWord)){
                         wordQueue.add(newWord);
                         distanceQueue.add(currDistance+1);
+                        // map.get(newWord).add(newWord);
                         dict.remove(newWord);// need to remove it once we have added it into queue, if not, we will get into endless loop.(circular graph)
                     }
                 }
