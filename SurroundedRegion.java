@@ -1,3 +1,11 @@
+/**
+ *
+ *  Good question of solving surrounded region. 
+ *  Use BFS, but remember to start from the edge is the best case.
+ *
+ *
+ */
+
 public class Solution {
     private Queue<Integer> queue = new LinkedList<Integer>();
     // apply bfs to detect whether it can go to boundary of '0'

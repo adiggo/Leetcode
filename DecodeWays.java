@@ -13,7 +13,8 @@ public class Solution {
     public int numDecodings(String s) {
         if(s==null || s.length()==0) {
             return 0;
-     }
+         }
+    //special condition
         if(s.charAt(0)=='0') {
             return 0;
         }

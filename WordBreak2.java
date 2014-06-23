@@ -1,3 +1,9 @@
+
+
+
+
+
+
 public class WordBreak2 {
     public ArrayList<String> wordBreak(String s, Set<String> dict) {
         ArrayList<String> ret = new ArrayList<String>();
@@ -16,7 +22,7 @@ public class WordBreak2 {
                 }
             }
         }
-        if (dp[n] == false) return ret; 
+        if (dp[n] == false) return ret;   // judge whether there are some combination in the dict. 
         StringBuilder cur = new StringBuilder();
         dfs(s, 0, cur, ret, dict);
         return ret;

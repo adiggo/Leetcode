@@ -224,4 +224,6 @@ if we override the setter and getter, then we need provide --> @synthesize suit 
 - --> means instance method ;;  + ---> means class method. 
 init ---> [[PlayingCardDeck alloc] init]
 instancetype ---> tell compiler that this method returns an object which will be same type as object that this message sent to. 
+a functionn has two arguments ---> -(void) addCard: (Card *)card atTop:(BOOL)atTop --> for this method, its name is "addCard:atTop";
+
 
