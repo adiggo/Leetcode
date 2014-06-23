@@ -8,12 +8,9 @@ public class DecodeWay2{
             return 0;
 
         int[] record = new int[s.length() + 1];
-        
-        if (s.length() == 1){
-            if (s.charAt(0)!= '0'){
-                return 1;
-            }
-        }
+                
+        record[0] = 1;
+        record[1] = 1;// initial state
         for (int i = 2; i <= s.length(); i++){
             if (s.substring(i-1, i) != '0'){
                 record[i] = record[i-1];
