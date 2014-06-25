@@ -9,7 +9,7 @@ public class ScrambleString{
         char[] s1array = s1.toCharArray();
         char[] s2array = s2.toCharArray();
         Arrays.sort(s1array);
-        Arrays.sort(s3array);
+        Arrays.sort(s2array);
 
         if (! new String(s1array).equals(new String(s2array))){
             return false;
