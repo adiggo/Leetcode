@@ -10,7 +10,7 @@ public class Solution {
 	 
 		for (int i = 0; i < num.length - 2; i++) {
 			// //avoid duplicate solutions
-			if (i == 0 || num[i] > num[i - 1]) {
+			if (i == 0 || num[i] > num[i - 1]) { // add zero is because its the first element!!!
 	 
 				int negate = -num[i];
 	 

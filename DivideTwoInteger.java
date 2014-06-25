@@ -1,3 +1,11 @@
+/**
+ *
+ *  Bit Manupulation --> no division, mod, and multiplication operator
+ *
+ *
+ */
+
+
 public class Solution {
     //idea: use bit
     // find the maximum, and then recursively find submaximum
@@ -15,9 +23,10 @@ public class Solution {
     
         int result = 0, cur = divisors.size() - 1;
         while (divd > 0 && cur >= 0) {
-            while (divd >= divisors.get(cur)) {
+            while (divd >= divisors.get(cur)) { // condition is important since we can't gurantee the remainder is larger than one of divisor.
+                                                // divisors are made up of divs * 2.
                 divd -= divisors.get(cur);
-                result += 1 << cur;
+                result += 1 << cur;   
             }
             --cur;
         }

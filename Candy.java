@@ -1,3 +1,11 @@
+/**
+ *
+ *  Scan twice --> first increse, then from end 
+ *
+ *
+ */
+
+
 public class Solution {
     public int candy(int[] ratings) {
         if (ratings.length == 0 ||ratings == null)

@@ -19,6 +19,10 @@ Need to rewrite:
 17. Search in rotated sorted array --> use four situation to write iteration. 
 18. Search in rotated sorted array2 --> this should consider when A[m]== A[low]. in this situation, move low forward.
 19. Set Zeros in Matrix ---> do it in place. reuse the memory rather than create new space. 
+20. Divide two integers --> use bit manupulation---> use a arraylist to hold divisors. 
+
+
+
 
 Heap vs Stack -----> heap memory allocation is dynamic. Stack memory allocation is fixed. 
                      If there are not enough memory, stack overflow will happen.
