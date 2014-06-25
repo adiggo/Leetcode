@@ -1,3 +1,9 @@
+
+/**
+ *  Reorder the list by reverse the right half.
+ *
+ */
+
 public class Solution {
     public void reorderList(ListNode head) {
         //divide list into half
