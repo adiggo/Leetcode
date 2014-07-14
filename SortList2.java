@@ -35,7 +35,7 @@ public class SortList2{
         while(first != null || second != null)
         {
             int f = first == null ?  Integer.MAX_VALIE:first.val;
-            int s = second == null? Integer.MAX_VALIE , second.val;
+            int s = second == null? Integer.MAX_VALUE : second.val;
             if (f < s){
                 cur.next = first;
                 first = fisrt.next;
