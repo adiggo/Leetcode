@@ -15,7 +15,7 @@ public class SortList2{
     }
 
     ListNode sort (ListNode head, int length){
-        if (length = 1)
+        if (length == 1)
         {
             ListNode temp = head;
             head = head.next;
