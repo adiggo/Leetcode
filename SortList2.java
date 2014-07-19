@@ -1,5 +1,8 @@
 public class SortList2{
-
+   /**
+    *Find the length of linkedlist
+    *
+    */
     ListNode sortList(ListNode head){
         if (head == null)
             return null;
@@ -14,8 +17,9 @@ public class SortList2{
         return newHead;
     }
 
+    //divide the linkedlist
     ListNode sort (ListNode head, int length){
-        if (length = 1)
+        if (length == 1)
         {
             ListNode temp = head;
             head = head.next;

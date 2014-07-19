@@ -20,8 +20,10 @@ Need to rewrite:
 18. Search in rotated sorted array2 --> this should consider when A[m]== A[low]. in this situation, move low forward.
 19. Set Zeros in Matrix ---> do it in place. reuse the memory rather than create new space. 
 20. Divide two integers --> use bit manupulation---> use a arraylist to hold divisors. 
-
-
+21. Single Number --> use bit manipulation solving this problem.
+22. Single Number2 --> achieve trinary
+23. Reverse words in string --> reverse each word, then reverse the whole string.
+24. Sort List use Insertion sort --> use a fake head.
 
 
 Heap vs Stack -----> heap memory allocation is dynamic. Stack memory allocation is fixed. 
@@ -229,5 +231,50 @@ if we override the setter and getter, then we need provide --> @synthesize suit 
 init ---> [[PlayingCardDeck alloc] init]
 instancetype ---> tell compiler that this method returns an object which will be same type as object that this message sent to. 
 a functionn has two arguments ---> -(void) addCard: (Card *)card atTop:(BOOL)atTop --> for this method, its name is "addCard:atTop";
+@synthesize display = _display;
+display is the property name, _display is the instance variable.
+
+In objective c, BOOL is primitive type, so when define the property, we don't need to treat it as strong, since it is not in heap.
+
+-(void) addCard : (Card *)card atTop:(BOOL)atTop;
+-(void) addCard : (Card *) card;
+in objective c, two arguments method, is built as addCard:atTop
+
+In objective c, declaring @property makes space in the instance for the pointer itself, but not does not allocate space in the heap for the object the pointer points to. 
+In objective C, id type is pointing to NSObject pointer type. Since most classes in objective c is inherited from NSObject, so it can be used as type pointer to access any object.
+Also we know there is instacetype
+
+NOSQL ---> means not only sql. 
+Four kinds of model of NOSQL--> key-value, document-based, column-based, Graph
+the first three were called as aggregate orientation.
+Relational database stores the information divided by row--> restricted data structure--> only contains a series of values.
+For example, we build a e-shop website. 
+As relational database, we need to have several tables: 1. Customer, 2. Orders, 3. Product, 4. Billing address 5. Order Item 6. Address 7.OrderPayment
+Use nosql, use JSON format to represent. 1. customers 2. orders 
+In NOSQL, for each component it can contains complex data. 
+{
+        id : 99,
+        orderItems: [
+            {
+                    "productID":27
+            }
+        ]
+}
+It is aggregate orientated. 
+For column store database, it applies bigtable-style data model.
+Two-level aggregate structure---> first key is identification symbol. We can get its aggregation.
+But the difference is row aggregate is another mapping, it contains detailed information.
+The second-level value is called "column".
+So we can use get('1234', 'name') to get the name of the customer.
+MongoDB is a document database. Means that we store data as documents, similar to javascript objects.In 
+MongoDB, collection just can be meant as table in relational databse.
+
+
+Bash script :
+
+chmod 600 file --> owner can read, write the file
+chmod 700 file --> owner can read, write and execute
+chmod 666 file --> all can read, write
+chmod 777 file --> all can read, write and execute.
 
 
