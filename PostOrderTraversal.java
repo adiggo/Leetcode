@@ -39,6 +39,7 @@ public class PostOrderTraversal{
             Node cur = s2.pop();
             result.add(cur);
         }
+        return result;
     }
 }
 
