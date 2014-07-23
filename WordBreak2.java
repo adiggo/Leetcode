@@ -1,4 +1,11 @@
-
+/**
+ *
+ *
+ *
+ *First check whether the dict can string s; 
+ *
+ *
+ */
 
 
 
@@ -6,6 +13,7 @@
 
 public class WordBreak2 {
     public ArrayList<String> wordBreak(String s, Set<String> dict) {
+        //result hold all the combination 
         ArrayList<String> ret = new ArrayList<String>();
         if (s==null || s.length()==0) return ret;
         int n = s.length();
@@ -38,6 +46,9 @@ public class WordBreak2 {
         }
 
         for(int i = start+1; i <= n+1; i++){
+            //since the index will not able to be out of the range
+            //we don't need to worry about it.
+
             if (dict.contains(s.substring(start, i))){
                 int oldLength = cur.length();
                 //add " ", then string
@@ -46,6 +57,7 @@ public class WordBreak2 {
                 
                 cur.append(s.substring(start, i));
                 dfs(s, i, cur, ret, dict);
+                // this step is important to get back to previous state.
                 cur.delete(oldLength, cur.length());
 
 
