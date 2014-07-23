@@ -19,7 +19,9 @@ public class LRUCache {
 	public int get(int key) {
 		if (map.containsKey(key)) {
 			DoubleLinkedListNode latest = map.get(key);
-			removeNode(latest);
+			//remove the lastest from the linkedlist
+            removeNode(latest);
+            //then insert it into head 
 			setHead(latest);
 			return latest.val;
 		} else {
@@ -27,6 +29,8 @@ public class LRUCache {
 		}
 	}
  
+
+
 	public void removeNode(DoubleLinkedListNode node) {
 		DoubleLinkedListNode cur = node;
 		DoubleLinkedListNode pre = cur.pre;
@@ -58,11 +62,13 @@ public class LRUCache {
 		}
 	}
  
+    //use end to denote the most unrecent node 
 	public void set(int key, int value) {
 		if (map.containsKey(key)) {
 			DoubleLinkedListNode oldNode = map.get(key);
 			oldNode.val = value;
 			removeNode(oldNode);
+            //update the linkedlist 
 			setHead(oldNode);
 		} else {
 			DoubleLinkedListNode newNode = 

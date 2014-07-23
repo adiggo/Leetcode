@@ -9,8 +9,13 @@ public class InsertionSortList{
         ListNode cur = head;
 
         while(cur != null){
+            //record the next node
             ListNode next = cur.next;
+            //each time set pre back to helper, the most first node
             pre = helper;
+
+            //place each node into the right place.
+            
             while(pre.next != null && pre.next.val < cur.val)
             {
                 pre = pre.next;

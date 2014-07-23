@@ -8,7 +8,7 @@ public class GenerateLowerCaseAndCapitalCase{
         for (int i = 0, n = (int) Math.pow(2, c.length); i < n; i++) {
             char[] permutation = new char[c.length];
             for (int j = 0; j < c.length; j++){
-                permutation[j] = (isBit()i, j) ? Character.toUpperCase(c[j]) : c[j];
+                permutation[j] = (isBit(i, j)) ? Character.toUpperCase(c[j]) : c[j];
             }
             result.add(new String(permutation));
         }
