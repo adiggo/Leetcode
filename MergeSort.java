@@ -20,8 +20,9 @@ public class MergerSort{
 		int helperLeft = start;
 		int helperRight = middle+1;
 		int current = start;
-
-		while(helperLeft<=middle && helperRight <= end){
+        //condition to check
+        // less or equal, decided by length-1
+        while(helperLeft<=middle && helperRight <= end){
 			if (helper[helperLeft]<= helper[helperRight]){
 				array[current] = array[helperLeft];
 				helperLeft++;

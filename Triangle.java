@@ -23,6 +23,7 @@ public class Solution {
         for (int i = triangle.size() - 2; i >= 0; i--) {
             for (int j = 0; j < triangle.get(i + 1).size() - 1; j++) {
                 // From bottom to up
+                // overwrite total[j], since the last row only contains one element, so we just need to output total[0]
                 total[j] = triangle.get(i).get(j) + Math.min(total[j], total[j + 1]);
             }
         }
