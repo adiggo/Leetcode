@@ -42,7 +42,7 @@ public class SortList2{
             int s = second == null? Integer.MAX_VALUE : second.val;
             if (f < s){
                 cur.next = first;
-                first = fisrt.next;
+                first = first.next;
             }
             else
             {
