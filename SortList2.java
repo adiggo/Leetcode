@@ -13,16 +13,17 @@ public class SortList2{
             len++;
             first = first.next;
         }
-        ListNode newHead = sort(head, len);
+        ListNode[] head1 = {head};
+        ListNode newHead = sort(head1, len);
         return newHead;
     }
 
     //divide the linkedlist
-    ListNode sort (ListNode head, int length){
+    ListNode sort (ListNode[] head, int length){
         if (length == 1)
         {
-            ListNode temp = head;
-            head = head.next;
+            ListNode temp = head[0];
+            head[0] = head.next;
             temp.next = null;
             return temp;
         }// this is very important to to make its next become null.
