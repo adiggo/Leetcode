@@ -20,7 +20,7 @@ public class LRUCache {
 		if (map.containsKey(key)) {
 			DoubleLinkedListNode latest = map.get(key);
 			//remove the lastest from the linkedlist
-            removeNode(latest);
+            		removeNode(latest);
             //then insert it into head 
 			setHead(latest);
 			return latest.val;
