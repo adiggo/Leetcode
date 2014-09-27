@@ -24,7 +24,7 @@ public class PalindromPartition{
                }
             }
         }
-        return result[0] - 1;
+        return result[0] - 1;  // since at first, we initiate the cut which is 1 more
     }
 }
 
