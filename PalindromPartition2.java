@@ -20,7 +20,7 @@ public class PalindromPartition{
             for(int j = i; j < s.length(); j++){
                if ( (j-i < 2 || dp[i+1][j-1] == true) &&  s.charAt(i) == s.charAt(j)){
                     dp[i][j] = true;
-                    result[i] = Math.min(result[i], result[j]+1);
+                    result[i] = Math.min(result[i], result[j+1]+1); // i to j is palindrom
                }
             }
         }
