@@ -31,7 +31,7 @@ public class Solution {
         	currentlevel.clear();
         	for (int i = 0; i < level; i++) {
         		String top = queue.poll();
-        		if (dict.contains(top)) dict.remove(top);
+        		if (dict.contains(top)) dict.remove(top);  // in this case, it will avoid duplicate for changing char in string
         		currentlevel.add(top);
         	}
         	
