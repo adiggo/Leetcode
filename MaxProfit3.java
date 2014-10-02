@@ -9,7 +9,7 @@ public class Solution {
         ArrayList<Integer> result = new ArrayList<Integer>();
         int low = prices[0];
         int maxProfit = 0;
-        for (int i = 0; i<prices.length; i++){
+        for (int i = 1; i<prices.length; i++){
             if (prices[i]<low)
                 low = prices[i];
             if (maxProfit<prices[i]-low)
