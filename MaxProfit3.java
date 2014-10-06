@@ -9,11 +9,12 @@ public class Solution {
         ArrayList<Integer> result = new ArrayList<Integer>();
         int low = prices[0];
         int maxProfit = 0;
-        for (int i = 0; i<prices.length; i++){
-            if (prices[i]<low)
-                low = prices[i];
+        for (int i = 1; i<prices.length; i++){
+            
             if (maxProfit<prices[i]-low)
                 maxProfit = prices[i]-low;
+            if (prices[i]<low)
+                low = prices[i];
             // add maxProfit into result
             result.add(maxProfit);
         }
@@ -27,8 +28,8 @@ public class Solution {
                 maxProfit2 = highest - prices[i];
              if (prices[i]>highest)
                 highest = prices[i];
-             if (finalResult < maxProfit2+result.get(i))
-                finalResult = maxProfit2+result.get(i);
+             if (finalResult < maxProfit2+result.get(i-1))
+                finalResult = maxProfit2+result.get(i-1);
         }
         return finalResult;
         
