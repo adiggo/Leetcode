@@ -30,7 +30,7 @@ public class LRUCache {
 	}
  
 
-
+// O(1)
 	public void removeNode(DoubleLinkedListNode node) {
 		DoubleLinkedListNode cur = node;
 		DoubleLinkedListNode pre = cur.pre;
@@ -96,6 +96,7 @@ class DoubleLinkedListNode {
 	public int key;
 	public DoubleLinkedListNode pre;
 	public DoubleLinkedListNode next;
+
  
 	public DoubleLinkedListNode(int key, int value) {
 		val = value;
